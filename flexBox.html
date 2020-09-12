@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container-1{
+            background-color: yellow;
+            display: flex;
+            /* flex-direction: row-reverse; */
+            flex-wrap: wrap;
+            /* align-items: flex-start; */
+             /* align-items: flex-end; */
+              /* align-items: center; */
+        }
+        .container-1 div{
+            border: 1px  solid #000000;
+            padding: 10px;
+            
+        }
+        .box-1{
+            flex:1;
+            order:2;
+        
+        }
+        .box-2{
+            flex:2;
+            order:1
+        }
+        .box-3{
+            flex:1;
+            order:3;
+        }
+
+        .container-2{
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .box{
+            border: 1px solid red;
+            padding: 20px;
+            flex-basis: 150px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container-1">
+
+        <div class="box-1">
+            <h2>ONE</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae sint nisi magni 
+            voluptatem quod officia rerum aliquid recusandae. Consequuntur voluptates doloribus illum 
+            provident sequi magnam magni a alias officia?
+        </div>
+        <div class="box-2">
+            <h2>Two</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae sint nisi magni 
+            voluptatem quod officia rerum aliquid recusandae. Consequuntur voluptates doloribus illum 
+            provident sequi magnam magni a alias officia?
+        </div>
+        <div class="box-3">
+            <h2>Three</h2>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis molestiae sint nisi magni 
+            voluptatem quod officia rerum aliquid recusandae. Consequuntur voluptates doloribus illum 
+            provident sequi magnam magni a alias officia?
+        </div>
+
+    </div>
+
+    <div class="container-2">
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, esse accusamus quia vitae est 
+            dolor unde ipsam amet. Impedit, enim.
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, esse accusamus quia vitae est 
+            dolor unde ipsam amet. Impedit, enim.
+        </div>
+        <div class="box">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, esse accusamus quia vitae est 
+            dolor unde ipsam amet. Impedit, enim.
+        </div>
+    </div>
+
+    
+</body>
+</html>
