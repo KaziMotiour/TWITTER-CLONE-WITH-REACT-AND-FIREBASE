@@ -1,0 +1,48 @@
+.TweetBox {
+  padding-bottom: 10px;
+  border-bottom: 8px solid #DDDDDD;
+  padding-right: 10px;
+}
+
+.TweetBox > form {
+  display: flex;
+  flex-direction: column;
+}
+
+.textarea {
+  width: 96%;
+  height: 60px;
+  font-size: 18px;
+  border: none;   
+  padding: 10px;
+}
+
+.textarea::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and firefox */
+.textarea {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.TweetBox--Button {
+  background-color: var(--twitter-color) !important;
+  border: none !important;
+  color: white !important;
+  font-weight: 700 !important;
+  text-transform: inherit !important;
+  border-radius: 30px !important;
+  height: 50px !important;
+  margin-top: 20px !important;
+  width: 100px;
+  float: right;
+}
+.tweetBox-imageInput{
+    border: none;
+    height: 25px;
+    padding: 10px;
+
+
+}
