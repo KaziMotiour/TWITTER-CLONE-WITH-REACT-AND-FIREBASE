@@ -40,3 +40,7 @@
 .post_avatar{
     padding:10px;
 }
+.img{
+    width: 500px;
+    /* max-height:  300px; */
+}

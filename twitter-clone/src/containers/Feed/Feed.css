@@ -1,7 +1,7 @@
 .feed {
-  flex: 0.4;
-  border-right: 1px solid var(--twitter-color);
-  min-width: fit-content;
+  flex: 0.6;
+  /* border-right: 1px solid var(--twitter-color); */
+  min-width: 450px;
   overflow-y: scroll;
 }
 
@@ -30,5 +30,4 @@
 .feed-header > h2 {
   font-size: 20px;
   font-weight: 700;
-  
 }

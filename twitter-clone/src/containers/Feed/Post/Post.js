@@ -4,30 +4,32 @@ import ChatBubbleOutlineIcon from '@material-ui/icons/ChatBubbleOutline';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import PublicIcon from '@material-ui/icons/Public';
 import RepeatIcon from '@material-ui/icons/Repeat';
-import React from "react";
+import React, {forwardRef} from "react";
+
 import "./Post.css";
 
-function Post({ displayName, username, verified, text, image, avatar }) {
+const Post  = forwardRef(({ displayName, username, varified, text, image, avatar }, ref) =>{
   return (
-    <div className="post">
+    <div className="post" ref={ref}>
       <div className="post_avatar">
-        <Avatar src="https://media-exp1.licdn.com/dms/image/C4D03AQGv0oGQhWGxAA/profile-displayphoto-shrink_200_200/0?e=1605139200&v=beta&t=qM3Z6XV7ERz9b1k7ndX630g5Ldbs49wx3OCktjq6_eU" />
+        <Avatar src={avatar}/>
       </div>
       <div className="post_body">
           <div className="post_header">
               <div className="post__headerText ">
-                  <h3>Kazi Motiour
-                        <VerifiedUserIcon className="post_badge" /><span className="post_username">@motiour</span>
+                  <h3>{displayName}
+                       {varified && <VerifiedUserIcon className="post_badge" /> }<span className="post_username">@{username}</span> 
 
                   </h3 >
 
               </div>
               <div className="post__headerDescription">
-                  <p>yoooooooooooooooooooooooooooooooo </p>
+                  <p>{text} </p>
 
               </div>
-              <img src="https://media.tenor.co/images/2477daff28ddd890e6d86cb0d737998e/tenor.gif?riffsid=TkRreE16YzNORjk1Ync9PTB6hVthXSZneAlE7vBSItlygRpt3YgbzkiNluPf-MRXedGXxNP-8wE9Yl7PDlCX" />
-              
+              <div className="img">
+              <img style={{width:"600px", height:"450px"}}  src={image} />
+              </div>
           </div>
 
           <div className="post_footer">
@@ -40,6 +42,6 @@ function Post({ displayName, username, verified, text, image, avatar }) {
       </div>
     </div>
   );
-}
+})
 
 export default Post;

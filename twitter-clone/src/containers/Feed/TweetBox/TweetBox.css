@@ -1,6 +1,6 @@
 .TweetBox {
   padding-bottom: 10px;
-  border-bottom: 8px solid #DDDDDD;
+  border-bottom: 8px solid #dddddd;
   padding-right: 10px;
 }
 
@@ -13,7 +13,7 @@
   width: 96%;
   height: 60px;
   font-size: 18px;
-  border: none;   
+  border: none;
   padding: 10px;
 }
 
@@ -39,10 +39,8 @@
   width: 100px;
   float: right;
 }
-.tweetBox-imageInput{
-    border: none;
-    height: 25px;
-    padding: 10px;
-
-
+.tweetBox-imageInput {
+  border: none;
+  height: 25px;
+  padding: 10px;
 }
